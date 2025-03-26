@@ -11,7 +11,7 @@ from gamesingle import game
 game.start()
 hero = game.start_level(0)
 
-game.show_menu()
+# game.show_menu()
 
 # На UBUNTU сборка pygame содержит ошибку, из-за которой не распознаются нажатые буквы...
 # Это обходится проверкой поля unicode, но такого поля нет у события KEYUP. 
