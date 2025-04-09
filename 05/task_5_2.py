@@ -5,4 +5,7 @@ async def async_task(name):
     await asyncio.sleep(2)
     print(f"Асинхронная задача {name} завершена")
 
-tasks = [asyncio.create_task(async_task(f"Задача {i+1}")) for i in range(5)]
+async def main():
+    await asyncio.gather(*(async_task(f"Задача {i+1}") for i in range(5)))
+
+asyncio.run(main())
