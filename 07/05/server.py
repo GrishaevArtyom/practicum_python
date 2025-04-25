@@ -2,7 +2,7 @@ import socket
 
 def udp_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    server_socket.bind(('localhost', 9090))
+    server_socket.bind(('localhost', 9099))
 
     print("UDP сервер запущен и ожидает сообщений...")
     try:

@@ -44,7 +44,7 @@ def handle_client(client_socket, client_address):
 
 def start_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server_socket.bind(('localhost', 9090))
+    server_socket.bind(('localhost', 9097))
     server_socket.listen()
     print("Server started and waiting for connections...")
 

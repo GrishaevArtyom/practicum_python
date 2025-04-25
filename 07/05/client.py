@@ -2,7 +2,7 @@ import socket
 
 def udp_client():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    server_address = ('localhost', 9090)
+    server_address = ('localhost', 9099)
 
     print("UDP клиент запущен. Введите 'exit' для завершения работы.")
     try:
